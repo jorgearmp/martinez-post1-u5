@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Reservas de Laboratorio - UFPS</title>
+</head>
+<body>
+    <h1>Sistema de Reservas de Laboratorios de Cómputo</h1>
+    <form action="/reservas" method="post">
+        <label>Laboratorio: <input type="text" name="laboratorio"/></label><br/>
+        <label>Solicitante: <input type="text" name="solicitante"/></label><br/>
+        <label>Fecha y Hora Inicio: <input type="datetime-local" name="inicio"/></label><br/>
+        <label>Fecha y Hora Fin: <input type="datetime-local" name="fin"/></label><br/>
+        <button type="submit">Reservar Laboratorio</button>
+    </form>
+</body>
+</html>
